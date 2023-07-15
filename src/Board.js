@@ -105,7 +105,7 @@ class Board extends Component {
         for(let x = 0; x < this.props.ncols; x++) {
             row.push(<Cell isLit={this.state.board[y][x]} />)
         }
-        tblBoard.push(<tr>{row}</tr>)
+        tblBoard.push(<tr key={y}>{row}</tr>)
     }
     return (
         <table className="Board">
