@@ -79,6 +79,9 @@ class Board extends Component {
       }
     }
 
+    //flip initial cell
+    flipCell(y,x);
+
     // TODO: flip this cell and the cells around it
 
     // win when every cell is turned off
